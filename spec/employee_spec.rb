@@ -13,7 +13,7 @@ describe Developer do
   subject(:developer) { described_class.new }
 
   it 'gets paid' do
-    expect(employee.pay).to eq 'This employee has been paid'
+    expect(developer.pay).to eq 'This employee has been paid'
   end
 
   it 'makes bugs' do
@@ -26,7 +26,7 @@ describe Intern do
   subject(:intern) { described_class.new }
 
   it 'makes bugs' do
-    expect(developer.make_bugs).to eq "I'm coding! Derp derp."
+    expect(intern.make_bugs).to eq "I'm coding! Derp derp."
   end
 
 end
