@@ -1,6 +1,12 @@
+module Dutys
+  def make_bugs
+    "I'm coding! Derp derp."
+  end
+end
+
 class Employee
 
-  def initialize(name:)
+  def initialize(name)
     @name = name
   end
 
@@ -10,8 +16,13 @@ class Employee
 
 end
 
-class Developer
+class Developer < Employee
+  include Dutys
 end
 
-class Intern
+class Intern < Employee
+  include Dutys
+  def pay
+    'I am an intern, I work for free'
+  end
 end
